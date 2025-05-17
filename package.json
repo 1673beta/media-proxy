@@ -5,11 +5,7 @@
 	"main": "built/index.js",
 	"packageManager": "pnpm@10.10.0",
 	"type": "module",
-	"files": [
-		"built",
-		"LICENSE",
-		"README.md"
-	],
+	"files": ["built", "LICENSE", "README.md"],
 	"scripts": {
 		"build": "tsc -p tsconfig.json",
 		"dev": "swc src -d built -D -w & fastify start -w -l info -P ./built/index.js",

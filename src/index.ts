@@ -318,9 +318,7 @@ async function proxyHandler(
 	}
 }
 
-async function downloadAndDetectTypeFromUrl(
-	url: string,
-): Promise<{
+async function downloadAndDetectTypeFromUrl(url: string): Promise<{
 	state: "remote";
 	mime: string;
 	ext: string | null;
