@@ -3,20 +3,13 @@ import { fileTypeFromFile } from "file-type";
 import isSvg from "is-svg";
 import { promisify } from "node:util";
 import { MimeType } from "./types.js";
+import { FILE_TYPE_BROWSERSAFE, TYPE_OCTET_STREAM, TYPE_SVG } from "./const.js";
 
-const TYPE_OCTET_STREAM = {
-	mime: "application/octet-stream",
-	ext: null,
-};
-
-const TYPE_SVG = {
-	mime: "image/svg+xml",
-	ext: "svg",
-};
 async function getFileSize(path: string): Promise<number> {
 	const getStat = promisify(fs.stat);
 	return (await getStat(path)).size;
 }
+
 export async function detectType(path: string): Promise<{
 	mime: string;
 	ext: string | null;
@@ -62,8 +55,6 @@ async function checkSvg(path: string) {
 		return false;
 	}
 }
-
-import { FILE_TYPE_BROWSERSAFE } from "./const.js";
 
 const dictionary = {
 	"safe-file": FILE_TYPE_BROWSERSAFE,

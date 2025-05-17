@@ -48,3 +48,13 @@ https://github.com/sindresorhus/file-type/blob/main/supported.js
 https://github.com/sindresorhus/file-type/blob/main/core.js
 https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Containers
 */
+
+export const TYPE_OCTET_STREAM = {
+	mime: "application/octet-stream",
+	ext: null,
+};
+
+export const TYPE_SVG = {
+	mime: "image/svg+xml",
+	ext: "svg",
+};
