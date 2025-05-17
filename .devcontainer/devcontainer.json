@@ -1,35 +1,35 @@
 {
-    "name": "MediaProxy",
-    "dockerComposeFile": "compose.yml",
-    "service": "app",
-    "workspaceFolder": "/workspace",
-    "features": {
-        "ghcr.io/devcontainers/features/node:1": {
-            "version": "22.15.0"
-        },
-        "ghcr.io/devcontainers-extra/features/pnpm": {
-            "version": "10.10.0"
-        }
-    },
-    "forwardPorts": [3230],
-    "postCreateCommand": "/bin/bash .devcontainer/init.sh",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "editorconfig.editorconfig",
-                "biomejs.biome",
-                "oderwat.indent-rainbow",
-                "ms-vscode.vscode-typescript-next",
-                "vscode-icons-team.vscode-icons",
-                "dbaeumer.vscode-eslint",
-                "github.vscode-github-actions",
-                "GitHub.copilot",
-                "GitHub.copilot-chat",
-                "mhutchie.git-graph",
-                "eamodio.gitlens",
-                "ms-azuretools.vscode-containers",
-                "ms-azuretools.vscode-docker"
-            ]
-        }
-    }
+	"name": "MediaProxy",
+	"dockerComposeFile": "compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "22.15.0"
+		},
+		"ghcr.io/devcontainers-extra/features/pnpm": {
+			"version": "10.10.0"
+		}
+	},
+	"forwardPorts": [3230],
+	"postCreateCommand": "/bin/bash .devcontainer/init.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"editorconfig.editorconfig",
+				"biomejs.biome",
+				"oderwat.indent-rainbow",
+				"ms-vscode.vscode-typescript-next",
+				"vscode-icons-team.vscode-icons",
+				"dbaeumer.vscode-eslint",
+				"github.vscode-github-actions",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"mhutchie.git-graph",
+				"eamodio.gitlens",
+				"ms-azuretools.vscode-containers",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
 }
