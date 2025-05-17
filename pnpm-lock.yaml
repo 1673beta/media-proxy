@@ -44,9 +44,6 @@ importers:
       is-svg:
         specifier: 6.0.0
         version: 6.0.0
-      mime:
-        specifier: 4.0.7
-        version: 4.0.7
       private-ip:
         specifier: 3.0.2
         version: 3.0.2
@@ -1069,11 +1066,6 @@ packages:
   mime@3.0.0:
     resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
     engines: {node: '>=10.0.0'}
-    hasBin: true
-
-  mime@4.0.7:
-    resolution: {integrity: sha512-2OfDPL+e03E0LrXaGYOtTFIYhiuzep94NSsuhrNULq+stylcJedcHdzHtz0atMUuGwJfFYs0YL5xeC/Ca2x0eQ==}
-    engines: {node: '>=16'}
     hasBin: true
 
   mimic-fn@2.1.0:
@@ -2448,8 +2440,6 @@ snapshots:
   mime-db@1.54.0: {}
 
   mime@3.0.0: {}
-
-  mime@4.0.7: {}
 
   mimic-fn@2.1.0: {}
 

@@ -5,7 +5,11 @@
 	"main": "built/index.js",
 	"packageManager": "pnpm@10.10.0",
 	"type": "module",
-	"files": ["built", "LICENSE", "README.md"],
+	"files": [
+		"built",
+		"LICENSE",
+		"README.md"
+	],
 	"scripts": {
 		"build": "tsc -p tsconfig.json",
 		"dev": "swc src -d built -D -w & fastify start -w -l info -P ./built/index.js",
@@ -43,7 +47,6 @@
 		"ip-cidr": "4.0.2",
 		"ipaddr.js": "2.2.0",
 		"is-svg": "6.0.0",
-		"mime": "4.0.7",
 		"private-ip": "3.0.2",
 		"sharp": "0.34.1",
 		"tmp": "0.2.3"
